@@ -1,21 +1,23 @@
-const userName = document.getElementById('name');
-const score = document.getElementById('score');
+import getScore from "./getScores";
+
 const addScore = document.getElementById('add-score');
-const scoreList = document.getElementById('score-list');
 
-const createScore = () => {
-  const nameLi = document.createElement('li');
-  nameLi.textContent = `${userName.value} ${score.value}`;
-  scoreList.append(nameLi);
+
+const postScore = async (name, score) => {
+  await fetch ('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fcVHLAyQwdIZeixcHMPy/scores',{
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      user: name,
+      score: score
+    })
+  })
+  .then((response) => response.json())
+  .then((data) => getScore());
 };
 
-const addtoList = () => {
-  addScore.addEventListener('click', (e) => {
-    e.preventDefault();
-    createScore();
-    userName.value = '';
-    score.value = '';
-  });
-};
 
-module.exports = { addtoList, createScore };
+
+export default postScore;
