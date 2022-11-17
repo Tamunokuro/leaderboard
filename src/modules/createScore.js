@@ -1,23 +1,16 @@
-import getScore from "./getScores";
-
-const addScore = document.getElementById('add-score');
-
-
 const postScore = async (name, score) => {
-  await fetch ('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fcVHLAyQwdIZeixcHMPy/scores',{
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fcVHLAyQwdIZeixcHMPy/scores', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       user: name,
-      score: score
-    })
+      score,
+    }),
   })
-  .then((response) => response.json())
-  .then((data) => getScore());
+    .then((response) => response.json())
+    .then((data) => data.result);
 };
-
-
 
 export default postScore;

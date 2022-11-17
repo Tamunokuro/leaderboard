@@ -1,14 +1,14 @@
 import './style.css';
 
-import { createScore, addtoList } from './modules/display';
-import getScore from './modules/getScores';
+import { createScore, addtoList } from './modules/display.js';
 
 const refresh = document.getElementById('refresh');
 
 addtoList();
 
-window.addEventListener('DOMContentLoaded', () =>  createScore())
+window.addEventListener('DOMContentLoaded', () => createScore());
 
 refresh.addEventListener('click', (e) => {
-    createScore()
-})
+  e.preventDefault();
+  createScore();
+});
