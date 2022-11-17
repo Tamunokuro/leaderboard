@@ -1,4 +1,5 @@
 import postScore from './createScore.js';
+import getScore from './getScores.js';
 
 const userName = document.getElementById('name');
 const score = document.getElementById('score');
@@ -14,9 +15,9 @@ const addtoList = () => {
   });
 };
 
-const createScore = () => {
+const createScore = async () => {
   scoreList.innerHTML = '';
-  const scores = JSON.parse(localStorage.getItem('result') || '[]');
+  const scores = await getScore();
   scores.forEach((score) => {
     const nameLi = document.createElement('li');
     nameLi.textContent = `${score.user} ${score.score}`;
