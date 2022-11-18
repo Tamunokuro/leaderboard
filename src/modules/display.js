@@ -18,7 +18,7 @@ const addtoList = () => {
 const createScore = async () => {
   scoreList.innerHTML = '';
   const scores = await getScore();
-  scores.sort(function(a, b){return b.score-a.score});
+  scores.sort((a, b) => b.score - a.score);
   scores.forEach((score) => {
     const nameLi = document.createElement('li');
     nameLi.textContent = `${score.user} - ${score.score}`;
