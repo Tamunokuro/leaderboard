@@ -2,36 +2,27 @@
 
 # Leaderboards
 
-> This is a simple leader board app for scores of players in a game
+> This is a simple leader board app for scores of players in a game built using Fetch API
 
 
 ## Built With
 
-- HTML, CSS & JavaScript
+- HTML
+- CSS
+- JavaScript
+
+## Getting Started
+
+### Prerequisites
+- Node Package Manager
 - Webpack
 - GIT
 
-<!-- ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.** -->
-
-
-<!-- To get a local copy up and running follow these simple example steps. -->
-
-<!-- ### Prerequisites
-
 ### Setup
+- Run `git clone git@github.com:Tamunokuro/leaderboard.git`
+- Run `npm install`
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment -->
-
-
+<!-- ### Deployment -->
 
 ## Authors
 
