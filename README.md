@@ -11,9 +11,6 @@
 - CSS
 - JavaScript
 
-
-## Live Demo (if available)
-
 ## Getting Started
 
 ### Prerequisites
