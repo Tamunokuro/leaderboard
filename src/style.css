@@ -14,6 +14,7 @@ h1 {
 
 #hero-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 10px auto;
@@ -25,6 +26,18 @@ h1 {
   flex-direction: column;
 }
 
+#score-list {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  width: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  margin: 35px auto;
+}
+
 .hero-header {
   display: flex;
   align-items: center;
@@ -32,6 +45,11 @@ h1 {
 
 .hero-header h3 {
   margin-right: 2rem;
+}
+
+#refresh {
+  padding: 5px;
+  width: 100px;
 }
 
 input {
@@ -50,4 +68,23 @@ input {
 
 li {
   list-style: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+li:nth-child(even) {
+  background-color: #fff;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #f0f8ff;
+  border: none;
+  font-weight: 900;
+}
+
+button:hover {
+  background-color: #cad7e2;
+  transition: all 0.3s;
+  cursor: pointer;
 }
