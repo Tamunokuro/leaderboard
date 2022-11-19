@@ -7,9 +7,30 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1 {
   margin-top: 5rem;
   padding-left: 2rem;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#bar {
+  width: 100px;
+  height: 16px;
+  border-bottom: 3px solid #fff;
+  margin: 0 auto 30px;
 }
 
 #hero-container {
@@ -27,15 +48,24 @@ h1 {
 }
 
 #score-list {
-  background-color: #f0f8ff;
+  backdrop-filter: blur(16px) saturate(100%);
+  background-color: rgba(17, 25, 40, 0.75);
   border-radius: 10px;
-  width: 100%;
+  width: 200%;
   color: #000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 8px;
   margin: 35px auto;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 3px dotted #fff;
 }
 
 .hero-header {
@@ -72,10 +102,6 @@ li {
   font-weight: 900;
 }
 
-li:nth-child(even) {
-  background-color: #fff;
-}
-
 button {
   border-radius: 5px;
   background-color: #f0f8ff;
@@ -84,7 +110,15 @@ button {
 }
 
 button:hover {
-  background-color: #cad7e2;
-  transition: all 0.3s;
+  background-color: rgba(17, 25, 40, 0.75);
+  transition: all 0.5s;
   cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 968px) {
+  input {
+    width: 150%;
+  }
 }

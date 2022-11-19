@@ -21,7 +21,12 @@ const createScore = async () => {
   scores.sort((a, b) => b.score - a.score);
   scores.forEach((score) => {
     const nameLi = document.createElement('li');
-    nameLi.textContent = `${score.user} - ${score.score}`;
+    nameLi.classList.add('score');
+    const spanName = document.createElement('span');
+    const spanScore = document.createElement('span');
+    spanName.textContent = `${score.user}`;
+    spanScore.textContent = `${score.score}`;
+    nameLi.append(spanName, spanScore);
     scoreList.append(nameLi);
   });
 };
