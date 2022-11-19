@@ -24,7 +24,6 @@ h1 {
 h3 {
   color: #fff;
   font-size: 2rem;
-
 }
 
 #bar {
@@ -111,14 +110,15 @@ button {
 }
 
 button:hover {
-  background-color: #cad7e2;
-  transition: all 0.3s;
+  background-color: rgba(17, 25, 40, 0.75);
+  transition: all 0.5s;
   cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
 }
 
-@media screen and (max-width: 968px){
+@media screen and (max-width: 968px) {
   input {
-    width: 150%
+    width: 150%;
   }
-  
 }
