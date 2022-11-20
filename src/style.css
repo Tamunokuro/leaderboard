@@ -71,6 +71,10 @@ h3 {
 .hero-header {
   display: flex;
   align-items: center;
+  backdrop-filter: blur(16px) saturate(100%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 10px;
+  padding: 8px;
 }
 
 .hero-header h3 {
