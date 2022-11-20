@@ -22,11 +22,12 @@
 - Run `git clone git@github.com:Tamunokuro/leaderboard.git`
 - Run `npm install`
 
-<!-- ### Deployment -->
+### Live Demo
+[Tournament Leaderboard](https://tamunokuro.github.io/leaderboard/dist/)
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [Tamunokuro](https://github.com/Tamunokuro)
 - LinkedIn: [Joshua Blue-Jack](https://linkedin.com/in/joshua-blue-jack)
