@@ -1,4 +1,4 @@
-const postScore = async (name, score) => fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/xvXWioll8KUnbnQMU2ky/scores', {
+const postScore = async (name, score) => fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BJq97vqQyuDrDz6yc9qi/scores', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
